@@ -1,0 +1,18 @@
+{
+  "name": "visualizetweets",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "twitter": "*",
+    "socket.io": "*"
+  },
+  "description": "Visualize Tweets on Google Map API",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "Maulik Kothari",
+  "license": "ISC"
+}

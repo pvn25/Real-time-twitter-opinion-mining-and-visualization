@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-tweet-stream' ]
+2 info using npm@2.7.0
+3 info using node@v0.13.0-pre
+4 warn package.json socket.io@1.0.0-pre No repository field.
+5 silly cache add args [ 'node-tweet-stream', null ]
+6 verbose cache add spec node-tweet-stream
+7 silly cache add parsed spec { raw: 'node-tweet-stream',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'node-tweet-stream',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed node-tweet-stream@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'node-tweet-stream', range: '*', hasData: false }
+12 silly mapToRegistry name node-tweet-stream
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/node-tweet-stream
+16 verbose addNameRange registry:https://registry.npmjs.org/node-tweet-stream not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/node-tweet-stream
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 20:32:50
+20 verbose request id 16c9883c1ada0245
+21 http request GET https://registry.npmjs.org/node-tweet-stream
+22 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND webproxy.indore.iiti.ac.in
+23 info attempt registry request try #2 at 20:33:01
+24 http request GET https://registry.npmjs.org/node-tweet-stream
+25 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND webproxy.indore.iiti.ac.in
+26 info attempt registry request try #3 at 20:34:01
+27 http request GET https://registry.npmjs.org/node-tweet-stream
+28 verbose stack Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND webproxy.indore.iiti.ac.in
+28 verbose stack     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:168:17)
+28 verbose stack     at ClientRequest.g (events.js:201:16)
+28 verbose stack     at ClientRequest.emit (events.js:109:17)
+28 verbose stack     at TLSSocket.socketErrorListener (_http_client.js:274:9)
+28 verbose stack     at TLSSocket.emit (events.js:131:20)
+28 verbose stack     at net.js:943:16
+28 verbose stack     at process._tickCallback (node.js:358:11)
+29 verbose cwd /home/vraj/visual
+30 error Linux 3.13.0-48-generic
+31 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node-tweet-stream"
+32 error node v0.13.0-pre
+33 error npm  v2.7.0
+34 error code ECONNRESET
+35 error network tunneling socket could not be established, cause=getaddrinfo ENOTFOUND webproxy.indore.iiti.ac.in
+35 error network This is most likely not a problem with npm itself
+35 error network and is related to network connectivity.
+35 error network In most cases you are behind a proxy or have bad network settings.
+35 error network
+35 error network If you are behind a proxy, please make sure that the
+35 error network 'proxy' config is set properly.  See: 'npm help config'
+36 verbose exit [ 1, true ]
